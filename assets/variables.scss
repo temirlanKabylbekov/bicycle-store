@@ -1,0 +1,15 @@
+// Using BEM-methodology to name css variables
+
+// fonts
+$font__size--root:                               10px !default;
+$font__family--root:                             'Fira Sans', Arial, sans-serif;
+$font__family--logo:                             lobster, cursive;
+
+// colors
+$hacky:                                         hsl(10%, 37%, 56%);
+$white:                                         hsl(0, 0%, 100%);
+$black:                                         hsl(0, 0%, 0%);
+$blue--dark:                                     hsl(58%, 36%, 25%);
+
+// z-indexes
+$z-index-cart-icon__counter:                    10;

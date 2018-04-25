@@ -1,0 +1,245 @@
+✔ html5 семантика: @done (2018-4-20 16:58:48)
+    article
+    aside
+    fieldset
+    когда h, когда header
+
+☐ почитать style guide css
+✔ почитать style guid html5 @done (2018-4-20 16:58:52)
+☐ почитать vuejs style guide
+
+☐ почитать встроенные функции sass http://sass-lang.com/documentation/Sass/Script/Functions.html
+
+☐ vuejs bad practices
+
+✔ почитать css flexbox @done (2018-4-23 12:47:48)
+✔ почитать css grid @done (2018-4-23 12:47:50)
+
+✔ почитать про БЭМ @done (2018-4-20 18:10:59)
+
+✔ почитать про scss @done (2018-4-20 18:45:07)
+
+☐ почитать статьи по nuxt, vuejs, повторить то, что здесь написано - чтобы освежить память по nuxt/vuejs
+
+
+        Новые Знания:
+☐ как работает npm install, node_modules, webpack, babel-loader
+☐ js es6
+    async fetch({ store }) {
+        await store.dispatch('catalog/FETCH_ROOT_CATEGORIES');
+    },
+☐ в page component понять, что такое asyncData
+☐ vuejs lifecycle
+☐ почитать про vue-router, vue-meta, vuex-store, vue-loader, vuejs, vue-cli
+☐ nuxt read later:
+    https://codeburst.io/when-to-use-server-side-rendering-ssr-in-vue-js-projects-697bd925d57b
+    https://habrahabr.ru/post/336902/#comment_10395088
+    https://www.sitepoint.com/nuxt-js-universal-vue-js/
+    https://www.storyblok.com/tp/nuxt-js-multilanguage-website-tutorial
+☐ nuxt libs:
+    https://github.com/nuxt-community/modules
+✔ html5 cheet sheet @done (2018-4-20 15:17:38)
+    https://learn-the-web.algonquindesign.ca/topics/html-semantics-cheat-sheet/
+    https://learn-the-web.algonquindesign.ca/topics/html-semantics-checklist/
+    http://html5doctor.com/downloads/h5d-sectioning-flowchart.pdf
+    http://html5doctor.com/element-index/
+    https://cdn.makeawebsitehub.com/wp-content/uploads/2015/06/HTML5-mega-cheat-sheet.jpg
+✔ html5 read later @done (2018-4-20 16:56:51)
+    https://www.smashingmagazine.com/2013/01/the-importance-of-sections/
+    https://www.hongkiat.com/blog/html-5-semantics/
+    https://www.w3.org/TR/html5/dom.html#flow-content
+
+    http://www.springboardseo.com/seo-blog/technical/common-semantic-html-mistakes/
+    http://amazing-share.com/resources/common-html5-mistakes.html
+    https://habrahabr.ru/post/124993/
+    https://www.capitalnumbers.com/blog/5-horrible-mistakes-youre-making-with-html5/
+☐ frontend read later
+    https://habrahabr.ru/company/mailru/blog/334536/
+    web components
+
+
+☐ css https://www.rankred.com/css-cheat-sheets/ ??
+
+☐ vuejs read later
+    + https://ru.vuejs.org/v2/style-guide/#Локальные-стили-компонента-важно
+    + style scoped
+
+    + зачем начинать название компонет с App
+    добавлять слово The для однословных имен (TheBurger, TheSearch)
+
+☐ js read later
+    import { mapState } from 'vuex';
+
+
+        Задачи по проекту:
+☐ исползовать vue-meta в проекте
+
+
+https://www.wix.com/website-template/view/html/1728/?siteId=e230264e-79c5-405f-8643-272eb920eced&metaSiteId=7352f130-6b4d-4b65-b703-9b0d7f2425be&originUrl=https%3A%2F%2Fwww.wix.com%2Fwebsite%2Ftemplates%2Fhtml%2Fonline-store
+http://www.mockapi.io/projects/5ac21caecb6ba300142578b8
+
+
+        Знания:
+
+        03/04/18
+- template-starter by vue-cli
+
+- статическая генерация страниц: nuxt generate
+    (сохраняется в виде маршрутов)
+    pages/
+        about.vue
+        index.vue
+    =>
+    dist/
+        about/
+            index.html
+        index.html
+
+- в папке assets хранятся нескомпилированные файлы (css/js):
+    normalize.css - css reset
+    variable.scss - глобальная для проекта переменные
+    functions.scss - глобальная для проекта функции
+    base.scss - глобальные для проекта стили
+- в папке components хранятся Vuejs-компоененты
+- в папке layouts можно хранить кастомные шаблоны, которые можно использовать в pages
+- папка middlewares - хранятся функции, каждая из которых будет вызываться перед каждым
+    рендерингом страницы, в порядке, указанном в `nuxt.config.js`. Необходимо удостоверится,
+    что каждая из этих функции вызывает промисы, чтобы функции отрабатывали без блокировок - 
+    асинхронно. Также `middleware` можно задать отдельно для `page.vue`
+- page.vue - перегруженные vue-component +=:
+    middleware
+    validate (валидация динамического роутинга
+                model/
+                    _id.vue => можно провалидировать число _id)
+    transition (анимация при загрузке страницы)
+    layout (какой шаблон использовать)
+    head (мета-теги)
+
+- beforeCreate и created hooks вызывается только на стороне сервера
+- axios - библиотека для выполнения http-запросов на стороне клиента (браузер) и сервера(node.js)
+- нельзя импортировать внешную либу в каждой компоененте, тогда он будет присутствовать в каждом
+    бандле - чтобы такого не было, нодо указать в `nuxt.config.js` один раз на весь проекта
+
+- как вызывать store внутри component? this.$store
+
+- SSR vs CSR:
+    + SEO-оптимизация (поисковые роботы не будут ждать, когда закончаться ajax-запросы)
+    + time-to-content выше (пользователи с медленным интернетом видят страницу сразу - не надо ждать,
+                скачивания js-файлов и сборки на стороне браузера)
+    - нагрузка на сервер (сборка node.js)
+- SSR vs пререндеринг
+    nuxt generate
+- универсальный код - код, который может использоваться как на клиенте, так и на сервере
+    реактивность на серверном коде отключена (она там и не нужна, т.к. нет взаимодействующего юзера + увеличение производительнсти)
+    beforeCreate/created доступны на сервера
+    платформонезависимый код (нельзя вызывать методы объекта window, document etc.)
+    на каждый запрос при CSR и SSR создается новый экземпляр Vue (чтобы не было засорения)
+- .nuxt/server.js - код, который будет исполняться на стороне сервера
+  .nuxt/client.js - код, который будет исполняться на стороне клиента
+  .nuxt/App.js - точка входа
+- code splitting (ленивая загрузка тех данных, которые необходимы для первоначального рендеринга)
+    увеличивает time-to-interactive
+- На сервере мы предзагрузить и заполнить данные в хранилище перед рендерингом
+- beforeMount vs asyncData
+    2 разных подхода заполнения компоененты данными
+        при переходе из страницы А в B
+            заполнение данных происходит на странице А и страницу B получаем с полными данными (asyncData)
+            показываем страницу B и параллельно заполняем данными (beforeMount)
+- гидратация статического html в интерактивное приложение - клиент получает static html и 
+    превращает в динамический DOM, который может реагировать на изменения данных на стороне клиента.
+- при гидратации необходимо писать всегда валидный html (преобразование в динамический DOM на основе кривого static html -error)
+
+- nuxt-link vs a: поддерживает html5 history: при нажатии кнопки назад, страница не перезагружается, а берется из истории
+
+
+
+            Цитаты:
+Основной задачей этого фреймворка является рендеринг пользовательского интерфейса в условиях 
+абстракции от клиент-серверной архитектуры.
+
+
+        05/04/18
+- Style Guide:
+    Имена компонент из > 1 слов
+    PascalCase
+    стили scoped
+    
+    AppComponent:
+    - не имею состояния в vuex
+    - ‎импортируют другие app component-ы или сторонние
+    - можно такие компоненты импортнуть один раз webpack-ом
+    
+    Если компонента не может жить без родителя, то в названии должен присутствовать имя родителя:
+    TodoList.vue
+    TodoListItem.vue
+    
+    SubscribeEmailForm.vue -> FormToSubscribeEmail.vue (общее слово, потом описание)
+
+    Начинать с The, если компонента не принимает входные параметры
+    
+    Входные данные в camelCase
+    
+    <MyComponent
+    foo="a"
+    bar="b"
+    baz="c"
+    />
+    
+    https://ru.vuejs.org/v2/style-guide/index.html#Порядок-опций-компонента-экземпляра-рекомендуется
+    https://ru.vuejs.org/v2/style-guide/index.html#Порядок-атрибутов-элемента-рекомендуется
+        
+- хочешь подключить google fonts?
+    это надо делать в nuxt.config.js в объекте head
+    
+
+
+
+    23/04
+- nuxt_config.js = {
+    build: {
+        vendor: ['axios'], # импортнуть в итоговый bundle либу единожды, в случае импорта в каждой компоненте, 
+                           # то он будет добавлен столько раз, сколько он был импортнут [зачем это - уменьшить размер bundle]
+    }
+- plugins - хранятся файлы, которые будут выполнены перед созданием экземпляра объекта Vue
+            так с помощью плагинов подключается awesome-vuejs
+- node-externals - плагин вебпака, с помощью которого можно подключать либы, которые не входили в итоговую сборку
+                    бандла (добавив их в whitelist - так нужно сделать awesome-vuejs, чтобы он работал на сервере)
+
+- !default в sass - установка дефолтного значения для переменной
+    $content: "First content";
+    $content: "Second content?" !default;
+
+    $content = First content, если бы не было бы "First content", то было бы "Second content"
+
+- hsl vs rgb
+  интуитивно понятнее подбирать оттенки одного цвета путем интерполяции чисел, в отличие от rgb
+  += особенно актуально, когда нужно менять оттенки цвета с помощью js
+  rgb - стандарт, который везде поддерживается
+
+- sass
+* &(Nested selectors don't necessarily have to start with the ampersand. You can qualify a selector by putting the & on the right.)
+    .button {
+        body.page-about & { }
+    }
+* 
+
+- rem - задает размер относительно размера шрифта html, а не body
+
+        Шпаргалки:
+- responsive images
+https://learn-the-web.algonquindesign.ca/topics/responsive-retina-images/
+
+
+- html5 semantics
+http://html5doctor.com/downloads/h5d-sectioning-flowchart.pdf
+http://html5doctor.com/element-index/
+https://cdn.makeawebsitehub.com/wp-content/uploads/2015/06/HTML5-mega-cheat-sheet.jpg
+https://www.w3.org/TR/html5/dom.html
+
+- html5 tools
+http://gsnedders.html5.org/outliner/
+
+
+        Библиотеки:
+- vue-media
+- vue-awesome

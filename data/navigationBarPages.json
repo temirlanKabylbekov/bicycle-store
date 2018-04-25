@@ -1,0 +1,23 @@
+[
+    {
+      "name": "Главная",
+      "absolute_url": "/"
+    },
+    {
+      "name": "Магазин",
+      "absolute_url": "/shop"
+    },
+    {
+      "name": "Блог",
+      "absolute_url": "/blog"
+    },
+    {
+      "name": "FAQ",
+      "absolute_url": "/faq"
+    },
+    {
+    	"name": "Контакты",
+    	"absolute_url": "/contacts"
+    }
+  ]
+  

@@ -1,12 +1,12 @@
 <template>
-	<nav>
+	<div>
 		<Media :query="{maxWidth: 992}">
 			<MobileBarForMainNavigation />
 		</Media>
 		<Media :query="{minWidth: 993}">
 			<DesktopBarForMainNavigation />
 		</Media>
-	</nav>
+	</div>
 </template>
 
 <script>
@@ -26,5 +26,4 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
 </style>

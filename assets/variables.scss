@@ -2,14 +2,22 @@
 
 // fonts
 $font__size--root:                               10px !default;
-$font__family--root:                             'Fira Sans', Arial, sans-serif;
+$font__family--root:                             'open sans', sans-serif;
 $font__family--logo:                             lobster, cursive;
+$font__color--root:                              hsl(184, 35.9%, 25.1%);
 
 // colors
-$hacky:                                         hsl(10%, 37%, 56%);
-$white:                                         hsl(0, 0%, 100%);
-$black:                                         hsl(0, 0%, 0%);
-$blue--dark:                                     hsl(58%, 36%, 25%);
+$hacky:                                          hsl(10, 37%, 56%);
+$white:                                          hsl(0, 0%, 100%);
+$black:                                          hsl(0, 0%, 0%);
+$blue--dark:                                     hsl(58, 36%, 25%);
+$gold:                                           hsl(36, 36.9%, 56.5%);
 
 // z-indexes
 $z-index-cart-icon__counter:                    10;
+
+// screen sizes
+$screen-sm:                                     480px;
+$screen-md:                                     768px;
+$screen-lg:                                     992px;
+$screen-xl:                                     1280px;

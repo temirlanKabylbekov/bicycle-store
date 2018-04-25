@@ -25,7 +25,7 @@ export default {
   &__icon {
 		fill: $hacky;
 		width: 3.5rem;
-		height: 4rem;
+    height: 4rem;
   }
 
   &__items-count {

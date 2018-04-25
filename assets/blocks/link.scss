@@ -1,0 +1,17 @@
+.link {
+	text-decoration: none;
+	cursor: pointer;
+	color: $font__color--root;
+
+  &:hover,
+  &:active,
+  &:visited,
+  &:focus {
+		text-decoration: none;
+		color: $font__color--root;
+	}
+
+	&.nuxt-link-exact-active {
+    pointer-events: none;
+  }
+}

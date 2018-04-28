@@ -227,6 +227,10 @@ http://www.mockapi.io/projects/5ac21caecb6ba300142578b8
   нужно все размеры задавать в rem и верстать так, чтобы если поменяешь размер корневого шрифта, то верстка
   не поломается, а просто смаштабируется
 
+- можно задать сетку и разместить grid item с помощью grid-area свойство item-а
+        grid-area: 1 / 5 / 2 / 10 = row-start / col-start / row-end / col-end
+- с помощью css grid нельзя сделать position fixed
+
 - box-sizing css TODO
 
         Шпаргалки:

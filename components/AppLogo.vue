@@ -1,5 +1,5 @@
 <template>
-  <div class="logo">
+	<div class="logo">
 		<span class="logo__start">cлава</span><span class="logo__end">велосипеды</span>
 	</div>
 </template>

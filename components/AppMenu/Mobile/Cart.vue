@@ -1,6 +1,6 @@
 <template>
   <a class="cart" href="">
-    <IconForCart />
+    <IconForCart class="cart__icon" />
   </a>
 </template>
 
@@ -14,8 +14,6 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
-.cart {
-  display: inline-block;
-}
+<style lang="scss">
+
 </style>

@@ -232,6 +232,13 @@ http://www.mockapi.io/projects/5ac21caecb6ba300142578b8
 - с помощью css grid нельзя сделать position fixed
 
 - box-sizing css TODO
+        content-box (только контент - без паддингов и маржина)
+        border-box: с учетом паддингов (но без маржина)
+
+- form 
+        action - урл, куда данные будут отправляться, если #, то обработка формы будет делаться js
+        method - (post или get) в случае get - данные отправляются в get-параметрах урла - небезопасно
+        novalidate - (к примеру, если в форму input.type=email, чтобы не было дефолтной валидации имаила
 
         Шпаргалки:
 - responsive images

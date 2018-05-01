@@ -23,7 +23,7 @@ export default {
     position: relative;
 
     .fa-icon {
-      fill: #B99867;
+      fill: $hacky;
       width: $width;
       height: $height;
     }

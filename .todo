@@ -240,6 +240,9 @@ http://www.mockapi.io/projects/5ac21caecb6ba300142578b8
         method - (post или get) в случае get - данные отправляются в get-параметрах урла - небезопасно
         novalidate - (к примеру, если в форму input.type=email, чтобы не было дефолтной валидации имаила
 
+- line-height and letter-spacing
+
+
         Шпаргалки:
 - responsive images
 https://learn-the-web.algonquindesign.ca/topics/responsive-retina-images/

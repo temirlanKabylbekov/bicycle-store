@@ -5,18 +5,18 @@
     },
     {
       "name": "Магазин",
-      "url": "/shop"
+      "url": "/shop/"
     },
     {
       "name": "Блог",
-      "url": "/blog"
+      "url": "/blog/"
     },
     {
       "name": "FAQ",
-      "url": "/faq"
+      "url": "/faq/"
     },
     {
     	"name": "Контакты",
-    	"url": "/contacts"
+    	"url": "/contacts/"
     }
   ]

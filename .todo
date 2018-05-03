@@ -241,6 +241,10 @@ http://www.mockapi.io/projects/5ac21caecb6ba300142578b8
         novalidate - (к примеру, если в форму input.type=email, чтобы не было дефолтной валидации имаила
 
 - line-height and letter-spacing
+- TODO:
+    auto-fit
+    min-max
+    repeat
 
 
         Шпаргалки:

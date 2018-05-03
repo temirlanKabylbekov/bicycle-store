@@ -3,3 +3,16 @@ html {
 	font-family: $font__family--root;
 	color: $font__color--root;
 }
+
+main {
+	margin: 0 auto;
+	width: 100%;
+
+	@media (min-width: $screen-lg) {
+		width: 96rem;
+	}
+
+	@media (min-width: $screen-xl) {
+		width: 114rem;
+	}
+}

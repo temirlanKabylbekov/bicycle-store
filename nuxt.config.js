@@ -34,6 +34,9 @@ module.exports = {
   plugins: [
     '~/plugins/vue-awesome.js',
   ],
+  axios: {
+    baseURL: 'http://5ac21caecb6ba300142578b7.mockapi.io/api/v1/',
+  },
   build: {
     /*
     ** Run ESLint on save
